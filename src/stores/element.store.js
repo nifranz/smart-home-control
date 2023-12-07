@@ -1,9 +1,10 @@
 import { defineStore } from "pinia";
+import getVariableValueFromId from "../helpers/getVariable";
 
 const elements = {
     1: {
         name: 'Licht oben',
-        state: 1
+        state: await getVariableValueFromId(1)
     },
     2: {
         name: 'Licht unten',
